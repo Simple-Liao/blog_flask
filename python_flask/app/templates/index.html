@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> 你好呀 , {{ current_user.username }} !</h1>
+{% for post in posts %}
+<div><p>{{ post.author.username }} 说：<b>{{ post.body }}</b></p></div>
+{% endfor %}
+
+{% endblock %}
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    {% if Title %}-->
+<!--    <title>{{Title}} - 博客</title>-->
+<!--    {% else %}-->
+<!--    <title>欢迎来到博客</title>-->
+<!--    {% endif %}-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1> Hello , {{user.username}} !</h1>-->
+<!--<h2> 你好呀 , {{user.username}} !</h2>-->
+<!--{% for post in posts %}-->
+<!--<div><p>{{ post.author.username }} 说：<b>{{ post.body }}</b></p></div>-->
+<!--{% endfor %}-->
+<!--</body>-->
+<!--</html>-->
